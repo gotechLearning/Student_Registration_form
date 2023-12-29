@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/foldercreat/task.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: white;
+            border: 1px solid black;
+            width: 950px;
+            margin: 23px auto;
+        }
+
+        .subcontainer {
+            background-color: rgb(129, 129, 237);
+            border: 2px solid blue;
+            margin: 8px 24px;
+            padding: 5px;
+            margin-bottom: 29px;
+        }
+
+        h3 {
+            color: rgb(129, 129, 237);
+            font-size: 30px;
+
+        }
+
+        td,pre,th {
+            color: white;
+        }
+        .submit{
+            border-radius: 4px;
+            /* background-color: white; */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>
+            <center><u>STUDENT REGISTRATION FORM</u></center>
+        </h3>
+        <div class="subcontainer" id="cont2">
+            <table>
+                <tbody><tr>
+                    <td>
+                        <label for="name">FIRST NAME</label>
+                    </td>
+                    <td> <input type="text" name="myname" id="name">
+                        <span>(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">LAST NAME</label>
+                    </td>
+                    <td> <input type="text" name="myname" id="lastname">
+                        <span>(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">DATE OF BIRTH</label>
+                    </td>
+
+                    <td> <input type="number" name="dob" id="day" min="1" max="31" placeholder="Day">
+
+                        <input type="number" name="dob" id="mon" min="1" max="12" placeholder="Month">
+
+                        <input type="number" name="dob" id="year" min="2000" max="2023" placeholder="Year">
+                    </td>
+                </tr><tr>
+                    <td>
+                        <label for="email">EMAIL ID</label>
+                    </td>
+                    <td> <input type="email" name="myemail" id="email">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mob">MOBILE NO</label>
+                    </td>
+                    <td> <input type="tel" name="mob" id="mob">
+                        <span>(10 digit number)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">GENDER</label>
+                    </td>
+                    <td><label for="male">Male</label>
+                        <input type="radio" name="male" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="male" id="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">ADDRESS</label>
+                    </td>
+                    <td> <textarea name="address" id="address" cols="29" rows="3"></textarea>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">CITY</label>
+                    </td>
+                    <td> <input type="text" name="mycity" id="city">
+                        <span>(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pincode">PIN CODE</label>
+                    </td>
+                    <td> <input type="number" name="mypincode" id="pincode">
+                        <span>(6 digit number)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="state">STATE</label>
+                    </td>
+                    <td> <input type="text" name="mystate" id="state">
+                        <span>(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">COUNTRY</label>
+                    </td>
+                    <td> <select name="country" id="country">
+                            <option value="ind" selected="">INDIA</option>
+                            <option value="pak">PAKISTAN</option>
+                            <option value="nep">NEPAL</option>
+                            <option value="jap">JAPAN</option>
+                            <option value="chi">CHINA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">HOBBIES</label>
+                    </td>
+                    <td><label for="draw">Drawing</label>
+                        <input type="checkbox" name="draw" id="draw">
+                        <label for="sing">Singing</label>
+                        <input type="checkbox" name="sing" id="sing">
+                        <label for="Dance">Danceing</label>
+                        <input type="checkbox" name="Dance" id="Dance">
+                        <label for="Sketch">Sketching</label>
+                        <input type="checkbox" name="Sketch" id="Sketch">
+                        <label for="others">Others</label>
+                        <input type="checkbox" name="others" id="others">
+                        <input type="text" name="blank" id="blank">
+                    </td>
+
+                </tr></tbody></table>
+
+                <table>
+                 <thead> 
+                  
+                    <tr> 
+                        <th>Qualification</th>
+                        <th>Sl.No.</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr><td></td>
+                            <td>1.</td>
+                            <td>CLASS X</td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2.</td>
+                            <td>CLASS XII</td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>3.</td>
+                            <td>GRADUATION</td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>4.</td>
+                            <td>MASTERS</td>
+                            <td><input type="text" name="class X" id="class X"></td>
+                           <!-- <pre>         (10 char max)</pre> -->
+                            <td><input type="text" name="class X" id="class X"></td>
+                            <!-- <pre>(upto 2 decimal)</pre> -->
+                            <td><input type="text" name="class X" id="class X"></td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+               <table>
+                <tbody><tr>
+                    <td>
+                        <label for="">COURSES APPLIED FOR</label>
+                    </td>
+                    <td><label for="bca">BCA</label> 
+                        <input type="radio" name="course" id="bca">
+                        <label for="b.com">B.com</label> 
+                        <input type="radio" name="course" id="b.com">
+                        <label for="ba">B.Sc</label> 
+                        <input type="radio" name="course" id="ba">
+                        <label for="ba">B.A</label> 
+                        <input type="radio" name="course" id="ba">
+                    </td>
+                </tr>
+           
+               </tbody></table>
+            
+    
+         <center><div class="submit"><input type="submit" value="submit">
+            <input type="reset" value="Reset"></div></center>
+
+    
+            
+
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
